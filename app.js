@@ -1,5 +1,6 @@
 function CalculateTax(ExclusivePrice, TaxRate) {
     const InclusivePrice = (ExclusivePrice * TaxRate) + ExclusivePrice;
-    console.log(InclusivePrice);
+    return InclusivePrice;
 }
-CalculateTax(1000,0.15)
+
+console.log(`The Inclusive Price is ${CalculateTax(1000,0.15)} Kshs`);
